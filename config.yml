@@ -1,0 +1,76 @@
+is_enabled: true
+debug: false
+
+loadouts:
+  ClassD: []
+  Scientist:
+    - chance: 20
+      items:
+        - "101"
+        - "Flashlight"
+    - chance: 30
+      items:
+        - "202"
+        - "Coin"
+  FacilityGuard: []
+  NtfPrivate: []
+  NtfSergeant: []
+  NtfSpecialist: []
+  NtfCaptain: []
+  ChaosConscript: []
+  ChaosRifleman: []
+  ChaosMarauder: []
+  ChaosRepressor: []
+
+item_names:
+  "101": "Bouncy Nade"
+
+hint:
+  enabled: true
+  header: "Otrzymane przedmioty:"
+  duration: 6
+  position:
+    anchor_min: {x: 0, y: 0}    # dolny lewy rog 
+    anchor_max: {x: 0, y: 0}    # dolny lewy rog (punkt)
+    pivot: {x: 0, y: 1}         # topleft kontener (z tekstem) rosnie do góry od punktu
+    offset_x: 40                # odstep od gornej krawedzi
+    offset_y: 40                # odstep od dolnej krawedzi
+
+  # rozmiar
+  size:
+    width: 320                  # szerokosc
+    height: 0                   # 0 = auto (obliczane z tekstu)
+    auto_size: true
+    min_width: 200
+    max_width: 500
+    min_height: 40
+    max_height: 300
+    padding: {left: 16, right: 16, top: 12, bottom: 12}
+
+  # tekst
+  text:
+    font_size: 16
+    font_style: "Normal"
+    color: {r: 1, g: 1, b: 1, a: 1}  # bialy
+    alignment: "MiddleLeft"           # left horizontal, middle vertical
+    vertical_alignment: "Middle"
+    line_spacing: 1.1
+    enable_word_wrapping: true
+    enable_rich_text: true
+    horizontal_alignment: "Left"
+
+  # tlo tekstu
+  background:
+    enabled: true
+    color: {r: 0, g: 0, b: 0, a: 1}   # czarny (waga wyzsza od opacity)
+    opacity: 0.8
+    padding: {left: 16, right: 16, top: 12, bottom: 12}
+    corner_radius: 0
+
+  # wyswietlanie
+  display:
+    duration: 6
+    enable_fade: true
+    fade_in_duration: 0.3
+    fade_out_duration: 0.5
+    sorting_order: 100   # musi byc wyzej niz inne elementy UI
